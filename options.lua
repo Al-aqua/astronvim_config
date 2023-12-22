@@ -4,9 +4,17 @@ return {
     -- set to true or false etc.
     relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
-    spell = false, -- sets vim.opt.spell
+    spell = true, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    tabstop = 4, -- number of space in a tab
+    shiftwidth = 4,
+    softtabstop = 4,
+    expandtab = true,
+    smartindent = true,
+    undodir = os.getenv("HOME") .. "/.vim/undodir",
+    colorcolumn = "80",
+    undofile = true,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader

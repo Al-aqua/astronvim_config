@@ -32,7 +32,21 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>u"] = {"<cmd> UndotreeToggle <CR>"},
+    -- ["<leader>x"] = {"<cmd> !chmod +x %<CR>" , opts={silent = true}},
+    ["<leader>x"] = {"<cmd> !chmod +x %<CR>"},
+    ["<leader>p"] = {"\"_dP"},
+    ["<leader>y"] = {"\"+y"},
+    ["<leader>Y"] = {"\"+Y"},
+    ["Q"] = {"<nop>"},
   },
+
+  v = {
+    ["J"] = {":m '>+1<CR>gv=gv"},
+    ["K"] = {":m '<-2<CR>gv=gv"},
+    ["<leader>y"] = {"\"+y"},
+  },
+
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
